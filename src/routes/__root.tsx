@@ -45,6 +45,12 @@ export const Route = createRootRoute({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Humilux Network — Shopify & Digital Marketing Experts" },
+      { name: "description", content: "Digital Marketing" },
+      { property: "og:description", content: "Digital Marketing" },
+      { name: "twitter:description", content: "Digital Marketing" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a1372c9d-a104-421d-bdec-89220aa7584d/id-preview-89c05b03--ae600642-b5d4-4e72-a903-c7a2d4103514.lovable.app-1776448663509.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a1372c9d-a104-421d-bdec-89220aa7584d/id-preview-89c05b03--ae600642-b5d4-4e72-a903-c7a2d4103514.lovable.app-1776448663509.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
