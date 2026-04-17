@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MessageCircle, Clock, Globe, Phone } from "lucide-react";
+import { Mail, MessageCircle, Clock, Globe, Phone, Briefcase } from "lucide-react";
 import logo from "@/assets/humilux-logo.jpg";
 
 export function Footer() {
@@ -72,6 +72,17 @@ export function Footer() {
                 className="hover:text-white"
               >
                 WhatsApp Chat
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Briefcase className="h-4 w-4" />
+              <a
+                href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white"
+              >
+                Hire us on Upwork
               </a>
             </li>
             <li className="flex items-center gap-2">
