@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MessageCircle, Clock, Globe, Phone, Briefcase } from "lucide-react";
-import logo from "@/assets/humilux-logo.jpg";
+import logo from "@/assets/humilux-logo.png";
 
 export function Footer() {
   return (
@@ -17,7 +17,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-20 pb-10 grid gap-12 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2">
-            <img src={logo} alt="" className="h-10 w-10 object-contain bg-white/10 rounded-lg p-1" />
+            <img src={logo} alt="" className="h-10 w-10 object-contain" />
             <span className="text-xl font-bold">
               Humilux <span className="font-light opacity-80">Network</span>
             </span>
