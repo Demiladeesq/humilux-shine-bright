@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Mail, MessageCircle, Clock, Send, Briefcase, Instagram } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
+import bannerContact from "@/assets/banner-contact.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -43,11 +44,16 @@ function ContactPage() {
 
   return (
     <>
-      <PageHero title="Contact Us" subtitle="Let's Talk About Your Project" align="left" />
+      <PageHero
+        title="Contact Us"
+        subtitle="Let's talk about your project — we reply within 24 hours."
+        align="left"
+        banner={bannerContact}
+      />
 
       <section className="max-w-6xl mx-auto px-6 lg:px-10 pb-16">
-        <p className="text-foreground/75 text-lg max-w-3xl">
-          Have a project in mind or want to work together? Fill out the form and we'll get back to you within 24 hours.
+        <p className="text-foreground/75 text-lg max-w-3xl leading-relaxed">
+          Whether you're launching a brand-new Shopify store, redesigning an existing one, or looking to scale with marketing, we'd love to hear from you. Fill out the form below, send us an email, message us on WhatsApp, or hire us directly on Upwork — whichever you prefer. We typically reply within 24 hours, often much sooner.
         </p>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-[1.4fr_1fr]">
