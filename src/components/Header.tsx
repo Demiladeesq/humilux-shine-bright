@@ -34,6 +34,14 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <a
+            href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden md:inline-flex items-center gap-2 rounded-full px-5 py-2.5 font-semibold text-sm border-2 border-primary/30 text-primary hover:bg-primary/5 transition-colors"
+          >
+            Upwork
+          </a>
           <Link
             to="/contact"
             className="hidden sm:inline-flex items-center gap-2 gradient-primary text-primary-foreground rounded-full px-6 py-3 font-semibold shadow-soft hover:shadow-glow transition-shadow"
