@@ -1,17 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import { Briefcase } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
+import bannerPortfolio from "@/assets/banner-portfolio.jpg";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — Humilux Network" },
+      { title: "Portfolio — Shopify & Marketing Case Studies | Humilux Network" },
       {
         name: "description",
-        content: "Past Shopify stores and digital marketing campaigns delivered by Humilux Network.",
+        content:
+          "Real Shopify stores and digital marketing campaigns delivered by Humilux Network — with measurable results in conversion, revenue, and growth.",
       },
-      { property: "og:title", content: "Past Projects — Humilux Network" },
-      { property: "og:description", content: "Shopify & Digital Marketing Success Stories." },
+      { property: "og:title", content: "Our Portfolio — Humilux Network" },
+      {
+        property: "og:description",
+        content:
+          "Browse Shopify store builds, redesigns, and digital marketing campaigns we've shipped for ecommerce brands worldwide.",
+      },
     ],
   }),
   component: PortfolioPage,
@@ -24,7 +31,7 @@ const projects = [
     cat: "shopify" as const,
     label: "Shopify Store",
     title: "ModaHaus — Premium Fashion Store",
-    desc: "Designed and optimized a high-converting Shopify store with improved UI/UX and performance.",
+    desc: "Designed and optimized a high-converting Shopify store with refined UI/UX, lightning-fast load times, and a streamlined mobile checkout.",
     growth: "+85%",
     gradient: "from-purple-300 to-pink-200",
   },
@@ -32,7 +39,7 @@ const projects = [
     cat: "shopify" as const,
     label: "Shopify Store",
     title: "Glow Naturals — Organic Skincare",
-    desc: "Redesigned and optimized a year-old store. Five distinct sections, refined product flows, and a smoother checkout.",
+    desc: "Redesigned a year-old store into a clean, brand-led experience with five distinct sections, refined product flows, and a smoother checkout.",
     growth: "+55%",
     gradient: "from-amber-200 to-rose-200",
   },
@@ -40,7 +47,7 @@ const projects = [
     cat: "shopify" as const,
     label: "Shopify Store",
     title: "Casa Decor — Modern Living",
-    desc: "Executed high-performing marketing strategies to increase traffic, leads, and conversions.",
+    desc: "Built a bespoke Shopify storefront paired with a marketing strategy that boosted traffic, leads, and repeat conversions month over month.",
     growth: "+72%",
     gradient: "from-stone-200 to-amber-100",
   },
@@ -48,7 +55,7 @@ const projects = [
     cat: "shopify" as const,
     label: "Shopify Store",
     title: "Urban Kicks — Sneaker Store",
-    desc: "Designed and optimized a high-converting Shopify store with improved UI/UX and performance.",
+    desc: "Designed a fast, mobile-first Shopify experience for a streetwear brand — with limited-drop launches, countdown timers, and high conversion rates.",
     growth: "+75%",
     gradient: "from-slate-300 to-zinc-200",
   },
@@ -56,7 +63,7 @@ const projects = [
     cat: "marketing" as const,
     label: "Digital Marketing",
     title: "Meta Ads Campaign — FitFuel",
-    desc: "Executed high-performing marketing strategies to increase traffic, leads, and conversions.",
+    desc: "Built a full Meta Ads funnel from cold prospecting to retargeting, scaling profitably to a +290% return on ad spend in 90 days.",
     growth: "+290%",
     gradient: "from-violet-300 to-indigo-200",
   },
@@ -64,7 +71,7 @@ const projects = [
     cat: "marketing" as const,
     label: "Digital Marketing",
     title: "Instagram Growth — Beauty Brand",
-    desc: "Executed high-performing marketing strategies to increase traffic, leads, and conversions.",
+    desc: "Organic content strategy and influencer partnerships that grew an audience from 4K to 60K+ engaged followers and lifted store traffic.",
     growth: "+65%",
     gradient: "from-pink-300 to-fuchsia-200",
   },
@@ -72,7 +79,7 @@ const projects = [
     cat: "marketing" as const,
     label: "Digital Marketing",
     title: "SEO Campaign — Fashion Store",
-    desc: "Executed high-performing marketing strategies to increase traffic, leads, and conversions.",
+    desc: "Technical SEO audit, keyword strategy, and content production that lifted organic sessions and pushed key product pages to page 1.",
     growth: "+82%",
     gradient: "from-emerald-200 to-teal-200",
   },
@@ -80,7 +87,7 @@ const projects = [
     cat: "marketing" as const,
     label: "Digital Marketing",
     title: "Email Marketing — Jewelry Brand",
-    desc: "Executed high-performing marketing strategies to increase traffic, leads, and conversions.",
+    desc: "Klaviyo welcome, abandoned cart, browse abandonment, and post-purchase flows that now drive 30%+ of total store revenue on autopilot.",
     growth: "+76%",
     gradient: "from-yellow-200 to-orange-200",
   },
@@ -99,9 +106,19 @@ function PortfolioPage() {
 
   return (
     <>
-      <PageHero title="Past Projects" subtitle="Shopify & Digital Marketing Success Stories" />
+      <PageHero
+        title="Our Portfolio"
+        subtitle="Real Shopify stores. Real campaigns. Real results."
+        banner={bannerPortfolio}
+      />
 
       <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-10">
+        <div className="max-w-3xl mx-auto text-center mb-10">
+          <p className="text-lg text-foreground/75 leading-relaxed">
+            Every project below was designed, developed, or marketed by the Humilux Network team. We measure success by what matters most: revenue, conversion rate, and lasting growth — not pretty screenshots.
+          </p>
+        </div>
+
         {/* Tabs */}
         <div className="flex flex-wrap gap-2 justify-center bg-card border border-primary/10 rounded-full p-2 max-w-2xl mx-auto shadow-card">
           {tabs.map((t) => (
@@ -153,13 +170,25 @@ function PortfolioPage() {
       <section className="max-w-7xl mx-auto px-6 lg:px-10 pb-10">
         <div className="gradient-primary rounded-3xl p-12 md:p-16 text-center text-primary-foreground shadow-glow">
           <h2 className="text-4xl md:text-5xl font-bold">Want Results Like These?</h2>
-          <p className="mt-4 text-lg opacity-90">Let's build a high-converting system for your business.</p>
-          <a
-            href="/contact"
-            className="mt-8 inline-flex items-center gap-2 bg-white text-primary rounded-full px-8 py-4 font-bold hover:scale-[1.02] transition-transform"
-          >
-            ✉ Start Your Project
-          </a>
+          <p className="mt-4 text-lg opacity-90 max-w-2xl mx-auto">
+            Let's build a high-converting Shopify store and growth system for your brand. Same team, same standard of work, dedicated to your goals.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4 justify-center">
+            <a
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-white text-primary rounded-full px-8 py-4 font-bold hover:scale-[1.02] transition-transform"
+            >
+              ✉ Start Your Project
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/30 text-primary-foreground rounded-full px-8 py-4 font-bold hover:bg-white/20 transition-colors"
+            >
+              <Briefcase className="h-4 w-4" /> Hire on Upwork
+            </a>
+          </div>
         </div>
       </section>
     </>
