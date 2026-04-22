@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, Menu, X } from "lucide-react";
+import { Mail, Menu, X, Instagram } from "lucide-react";
 import { useState } from "react";
 import { Logo } from "./Logo";
 
@@ -34,6 +34,15 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <a
+            href="https://www.instagram.com/humiluxnetwork/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+            className="hidden md:inline-flex items-center justify-center h-10 w-10 rounded-full border-2 border-primary/30 text-primary hover:bg-primary/5 transition-colors"
+          >
+            <Instagram className="h-4 w-4" />
+          </a>
           <a
             href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
             target="_blank"
