@@ -90,12 +90,12 @@ function HomePage() {
               Most Shopify stores look the same and convert at half their potential. We design custom, brand-led experiences and pair them with marketing systems that grow revenue predictably — so you stop guessing and start scaling.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                to="/contact"
+              <a
+                href="mailto:humiluxnetwork@gmail.com?subject=Start%20My%20Project&body=Hi%20Humilux%20Network%2C%20I%27d%20like%20to%20start%20a%20project%20with%20you."
                 className="inline-flex items-center gap-2 gradient-primary text-primary-foreground rounded-full px-7 py-4 font-semibold shadow-glow hover:scale-[1.02] transition-transform"
               >
                 Start Your Project <ArrowRight className="h-4 w-4" />
-              </Link>
+              </a>
               <a
                 href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
                 target="_blank"
@@ -252,12 +252,12 @@ function HomePage() {
             Book a free 30-minute consultation. We'll review your store, identify your biggest growth levers, and show you exactly how Humilux Network can help you scale.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center relative">
-            <Link
-              to="/contact"
+            <a
+              href="mailto:humiluxnetwork@gmail.com?subject=Free%20Consultation%20Request&body=Hi%20Humilux%20Network%2C%20I%27d%20like%20to%20book%20a%20free%2030-minute%20consultation."
               className="inline-flex items-center gap-2 bg-white text-primary rounded-full px-8 py-4 font-bold hover:scale-[1.02] transition-transform"
             >
               Get a Free Consultation <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
             <a
               href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
               target="_blank"

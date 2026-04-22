@@ -175,7 +175,7 @@ function PortfolioPage() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <a
-              href="/contact"
+              href="mailto:humiluxnetwork@gmail.com?subject=Start%20My%20Project&body=Hi%20Humilux%20Network%2C%20I%27d%20like%20to%20start%20a%20project%20with%20you."
               className="inline-flex items-center gap-2 bg-white text-primary rounded-full px-8 py-4 font-bold hover:scale-[1.02] transition-transform"
             >
               ✉ Start Your Project

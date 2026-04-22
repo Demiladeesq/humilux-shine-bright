@@ -143,12 +143,12 @@ function BlogPage() {
               <p className="mt-2 text-sm opacity-90">
                 Book a free consultation and we'll review your store on a 30-minute call.
               </p>
-              <Link
-                to="/contact"
+              <a
+                href="mailto:humiluxnetwork@gmail.com?subject=Free%20Store%20Review&body=Hi%20Humilux%20Network%2C%20I%27d%20like%20to%20book%20a%20free%20consultation%20for%20my%20store."
                 className="mt-4 inline-flex items-center gap-2 bg-white text-primary rounded-full px-5 py-2 font-semibold text-sm"
               >
                 Contact us <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
+              </a>
             </div>
           </aside>
         </div>

@@ -51,13 +51,13 @@ export function Header() {
           >
             Upwork
           </a>
-          <Link
-            to="/contact"
+          <a
+            href="mailto:humiluxnetwork@gmail.com?subject=Hello%20Humilux%20Network"
             className="hidden sm:inline-flex items-center gap-2 gradient-primary text-primary-foreground rounded-full px-6 py-3 font-semibold shadow-soft hover:shadow-glow transition-shadow"
           >
             <Mail className="h-4 w-4" />
             Contact
-          </Link>
+          </a>
           <button
             onClick={() => setOpen((v) => !v)}
             className="lg:hidden p-2 text-primary"
@@ -83,13 +83,13 @@ export function Header() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="mailto:humiluxnetwork@gmail.com?subject=Hello%20Humilux%20Network"
               onClick={() => setOpen(false)}
               className="mt-2 py-3 px-3 rounded-lg gradient-primary text-primary-foreground font-semibold text-center"
             >
               Contact
-            </Link>
+            </a>
           </nav>
         </div>
       )}

@@ -195,12 +195,12 @@ function AboutPage() {
             Whether you're launching your first store or scaling a 7-figure brand, our team is ready to help you design, optimize, and convert.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            <Link
-              to="/contact"
+            <a
+              href="mailto:humiluxnetwork@gmail.com?subject=Let%27s%20Work%20Together&body=Hi%20Humilux%20Network%2C%20I%27d%20like%20to%20get%20in%20touch."
               className="inline-flex items-center gap-2 bg-white text-primary rounded-full px-7 py-3 font-bold hover:scale-[1.02] transition-transform"
             >
               Get in Touch <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
             <a
               href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
               target="_blank"
