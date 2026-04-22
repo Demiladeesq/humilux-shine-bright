@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ShoppingBag, RefreshCw, TrendingUp, Megaphone, CheckCircle2, ArrowRight, Briefcase } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import bannerServices from "@/assets/banner-services.jpg";
@@ -134,12 +134,12 @@ function ServicesPage() {
             Book a free strategy call and we'll show you exactly which services will move the needle fastest for your store.
           </p>
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
-            <Link
-              to="/contact"
+            <a
+              href="mailto:humiluxnetwork@gmail.com?subject=Free%20Consultation%20Request&body=Hi%20Humilux%20Network%2C%20I%27d%20like%20to%20book%20a%20free%20consultation."
               className="inline-flex items-center gap-2 gradient-primary text-primary-foreground rounded-full px-8 py-4 font-semibold shadow-glow hover:scale-[1.02] transition-transform"
             >
               Get a Free Consultation <ArrowRight className="h-4 w-4" />
-            </Link>
+            </a>
             <a
               href="https://www.upwork.com/freelancers/~01cb5bcebb3be53066"
               target="_blank"
