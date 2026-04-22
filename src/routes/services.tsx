@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ShoppingBag, RefreshCw, TrendingUp, Megaphone, CheckCircle2, ArrowRight, Briefcase } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import bannerServices from "@/assets/banner-services.jpg";

@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Calendar } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import bannerBlog from "@/assets/banner-blog.jpg";

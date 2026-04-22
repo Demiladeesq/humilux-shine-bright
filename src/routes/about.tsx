@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { CheckCircle2, Target, Eye, Heart, Briefcase, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/PageHero";
 import bannerAbout from "@/assets/banner-about.jpg";
