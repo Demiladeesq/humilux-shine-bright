@@ -153,7 +153,7 @@ function ContactPage() {
                 </li>
                 <li>
                   <a
-                    href="https://wa.me/message/KDYQZXMRNMJEN1"
+                    href="https://wa.me/2349150515868"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-4 group"
@@ -164,7 +164,7 @@ function ContactPage() {
                     <div>
                       <div className="font-bold text-primary">WhatsApp</div>
                       <div className="text-sm text-foreground/70 group-hover:text-primary transition-colors">
-                        Chat with us →
+                        +234 915 051 5868 →
                       </div>
                     </div>
                   </a>
