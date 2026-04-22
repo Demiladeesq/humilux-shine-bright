@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MessageCircle, Clock, Globe, Phone, Briefcase } from "lucide-react";
+import { Mail, MessageCircle, Clock, Globe, Phone, Briefcase, Instagram } from "lucide-react";
 import logo from "@/assets/humilux-logo.png";
 
 export function Footer() {
@@ -83,6 +83,17 @@ export function Footer() {
                 className="hover:text-white"
               >
                 Hire us on Upwork
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Instagram className="h-4 w-4" />
+              <a
+                href="https://www.instagram.com/humiluxnetwork/"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-white"
+              >
+                @humiluxnetwork
               </a>
             </li>
             <li className="flex items-center gap-2">

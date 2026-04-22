@@ -134,15 +134,22 @@ function ContactPage() {
                   </a>
                 </li>
                 <li>
-                  <div className="flex items-center gap-4">
+                  <a
+                    href="https://www.instagram.com/humiluxnetwork/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-4 group"
+                  >
                     <div className="h-12 w-12 rounded-xl bg-pink-100 text-pink-600 flex items-center justify-center">
                       <Instagram className="h-5 w-5" />
                     </div>
                     <div>
                       <div className="font-bold text-primary">Instagram</div>
-                      <div className="text-sm text-foreground/70">@humilux.network</div>
+                      <div className="text-sm text-foreground/70 group-hover:text-primary transition-colors">
+                        @humiluxnetwork →
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </li>
                 <li>
                   <a
